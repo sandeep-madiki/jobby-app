@@ -1,0 +1,74 @@
+.job-card-bg {
+  background-color: #202020;
+  padding: 16px;
+  margin-bottom: 14px;
+  font-family: 'Roboto';
+  border-radius: 12px;
+  width: 100%;
+}
+.title {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.link {
+  text-decoration: none;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.card-company-logo {
+  width: 60px;
+  margin-right: 14px;
+}
+.star-icon {
+  color: gold;
+}
+.rating-con {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+.card-rating {
+  color: #fff;
+  margin-left: 6px;
+  padding: 0px;
+  font-size: 16px;
+}
+.location-container {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+.location-icon {
+  color: #fff;
+  margin-right: 8px;
+}
+.location-icon-text {
+  font-size: 16px;
+  color: #f8fafc;
+}
+.location-employment-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f8fafc;
+}
+.package {
+  color: #f8fafc;
+}
+.location-sub-con {
+  display: flex;
+  align-items: center;
+}
+.job-des-heading {
+  color: #cbd5e1;
+  font-size: 18px;
+}
+.job-des {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.8;
+}

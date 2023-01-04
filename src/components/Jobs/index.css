@@ -1,0 +1,153 @@
+.jobs-bg {
+  background-color: #121212;
+  min-height: 90vh;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  width: 100%;
+}
+.heading {
+  color: #fff;
+}
+.user-details-bg {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  border-radius: 16px;
+  width: 85%;
+  height: 250px;
+  background-size: cover;
+  padding: 16px;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-name {
+  color: #6366f1;
+  margin-bottom: 0px;
+  font-size: 28px;
+}
+.user-profile {
+  width: 60px;
+}
+.user-short-bio {
+  color: #2c364c;
+  font-size: 18px;
+  font-weight: 500;
+}
+.jobs-container {
+  width: 70%;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.search-icon-con {
+  background-color: #202020;
+  padding: 6px;
+  height: 32px;
+  width: 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  height: 32px;
+  margin-bottom: 16px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  width: 60%;
+}
+.search-input {
+  height: 32px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 89%;
+  padding: 3px 7px;
+  color: #f8fafc;
+}
+.search-icon {
+  color: #f8fafc;
+  width: 16px;
+}
+.filters-con {
+  width: 30%;
+}
+.separator {
+  color: #f8fafc;
+  width: 85%;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.type-of-employment {
+  color: #f8fafc;
+  font-size: 18px;
+}
+.job-type-item-con {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.job-type-label {
+  color: #f8fafc;
+  margin-left: 8px;
+  font-size: 12px;
+}
+.checkbox {
+  width: 22px;
+}
+.check-boxes-con {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.failure-img {
+  width: 30%;
+}
+.loader-container {
+  width: 70%;
+  padding-top: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.loader-container-user {
+  width: 30%;
+  padding-top: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.failure-container {
+  width: 70%;
+  padding-top: 14vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.retry-btn {
+  background-color: #6366f1;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  color: #f8fafc;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.user-con {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.failure-heading {
+  color: #f8fafc;
+}
+.failure-description {
+  color: #f8fafc;
+}

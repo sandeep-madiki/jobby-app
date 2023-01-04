@@ -1,0 +1,146 @@
+.job-details-main-bg {
+  background-color: #121212;
+  min-height: 90vh;
+  padding: 40px;
+  font-family: 'Roboto';
+}
+.job-card-bg {
+  background-color: #202020;
+  padding: 24px;
+  margin-bottom: 14px;
+  font-family: 'Roboto';
+  border-radius: 12px;
+  width: 100%;
+}
+.title {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.link {
+  text-decoration: none;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.card-company-logo {
+  width: 60px;
+  margin-right: 14px;
+}
+.star-icon {
+  color: gold;
+}
+.rating-con {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+.card-rating {
+  color: #fff;
+  margin-left: 6px;
+  padding: 0px;
+  font-size: 16px;
+}
+.location-container {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+.location-icon {
+  color: #fff;
+  margin-right: 8px;
+}
+.location-icon-text {
+  font-size: 16px;
+  color: #f8fafc;
+}
+.location-employment-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f8fafc;
+}
+.package {
+  color: #f8fafc;
+}
+.location-sub-con {
+  display: flex;
+  align-items: center;
+}
+.job-des-heading {
+  color: #f1f5f9;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.job-des {
+  color: #f1f5f9;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.skills {
+  color: #f1f5f9;
+  font-size: 26px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.skills-con {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 26px;
+}
+.skills-img {
+  width: 50px;
+}
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.skill-txt {
+  color: #f1f5f9;
+  font-weight: 500;
+  margin-left: 14px;
+}
+.life-at-company-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.job-des-life-at-company {
+  color: #f1f5f9;
+  font-size: 16px;
+  line-height: 1.8;
+  width: 65%;
+}
+.similar-jobs {
+  color: #f1f5f9;
+  margin-top: 28px;
+}
+.similar-jobs-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.visit-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.visit {
+  color: #6366f1;
+  margin-right: 4px;
+}
+.visit-icon-con {
+  display: flex;
+  align-items: center;
+  color: #6366f1;
+  text-decoration: none;
+}
