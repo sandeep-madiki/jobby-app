@@ -18,7 +18,7 @@ const JobCard = props => {
   } = details
   return (
     <Link className="link" to={`/jobs/${id}`}>
-      <div className="job-card-bg">
+      <li className="job-card-bg">
         <div className="logo-container">
           <img
             className="card-company-logo"
@@ -48,7 +48,7 @@ const JobCard = props => {
         </div>
         <h1 className="job-des-heading">Description</h1>
         <p className="job-des">{jobDescription}</p>
-      </div>
+      </li>
     </Link>
   )
 }

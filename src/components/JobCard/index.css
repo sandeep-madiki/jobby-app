@@ -5,6 +5,7 @@
   font-family: 'Roboto';
   border-radius: 12px;
   width: 100%;
+  list-style-type: none;
 }
 .title {
   color: #fff;
@@ -71,4 +72,22 @@
   color: #cbd5e1;
   font-size: 14px;
   line-height: 1.8;
+}
+
+@media (max-width: 576px) {
+  .job-des {
+    font-size: 10px;
+  }
+  .job-des-heading {
+    font-size: 14px;
+  }
+  .package {
+    font-size: 12px;
+  }
+  .location-icon-text {
+    font-size: 12px;
+  }
+  .location-icon {
+    margin-right: 5px;
+  }
 }

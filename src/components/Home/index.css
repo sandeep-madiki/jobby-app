@@ -18,6 +18,14 @@
   font-weight: 300;
   line-height: 1.5;
 }
+@media (max-width: 576px) {
+  .home-heading {
+    width: 95%;
+  }
+  .home-des {
+    width: 90%;
+  }
+}
 .find-jobs-btn {
   background-color: #6366f1;
   color: #fff;

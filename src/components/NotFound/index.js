@@ -1,7 +1,5 @@
 import './index.css'
 
-const re = "'re"
-
 const NotFound = () => (
   <div className="not-found-bg">
     <img
@@ -11,7 +9,7 @@ const NotFound = () => (
     />
     <h1 className="not-found-heading">Page Not Found</h1>
     <p className="not-found-description">
-      {`we${re} sorry, the page you requested could not be found`}
+      We are sorry, the page you requested could not be found
     </p>
   </div>
 )

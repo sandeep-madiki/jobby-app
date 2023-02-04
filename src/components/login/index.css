@@ -57,3 +57,9 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 576px) {
+  .login-bg {
+    width: 70%;
+  }
+}

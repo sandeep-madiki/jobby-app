@@ -1,7 +1,7 @@
 .header-container {
   background-color: #202020;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 6%;
+  padding-right: 6%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,6 +12,11 @@
   width: 100px;
   cursor: pointer;
 }
+@media (min-width: 576px) {
+  .header-icon {
+    display: none;
+  }
+}
 .log-out-btn {
   background-color: #6366f1;
   color: #fff;
@@ -20,6 +25,9 @@
   padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
+}
+.btn-list-item {
+  list-style-type: none;
 }
 .header-list-con {
   display: flex;
@@ -33,4 +41,33 @@
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+}
+.header-list-item-home {
+  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .header-list-item-home {
+    display: none;
+  }
+  .btn-list-item {
+    display: none;
+  }
+  .header-logo {
+    width: 80px;
+  }
+}
+.header-list-item-logout {
+  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  list-style-type: none;
+}
+@media (min-width: 576px) {
+  .header-list-item-logout {
+    display: none;
+  }
 }

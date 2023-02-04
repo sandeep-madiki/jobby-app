@@ -4,3 +4,10 @@
   padding: 12px;
   width: 30%;
 }
+
+@media (max-width: 576px) {
+  .similar-job-card-bg {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+}

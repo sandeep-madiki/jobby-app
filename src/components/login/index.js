@@ -27,7 +27,7 @@ class Login extends Component {
           type="text"
           className="input-field"
           value={username}
-          placeholder="Username"
+          placeholder="rahul"
           onChange={this.updateUsername}
         />
       </>
@@ -46,7 +46,7 @@ class Login extends Component {
           value={password}
           id="password"
           className="input-field"
-          placeholder="Password"
+          placeholder="rahul@2021"
           onChange={this.updatePassword}
         />
       </>
@@ -57,12 +57,13 @@ class Login extends Component {
     Cookies.set('jwt_token', token, {expires: 30})
     const {history} = this.props
     history.replace('/')
+    // console.log(this.props)
   }
 
   submitForm = async event => {
-    const {username, password} = this.state
     event.preventDefault()
 
+    const {username, password} = this.state
     const loginUrl = 'https://apis.ccbp.in/login'
     const userDetails = {
       username,

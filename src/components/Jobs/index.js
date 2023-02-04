@@ -103,6 +103,9 @@ class Jobs extends Component {
     this.setState({jobsDataStatus: loadingStages.progress})
 
     const {jobType, salaryRange, searchVal} = this.state
+
+    const joinedJobTypes = jobType.join()
+    console.log(joinedJobTypes)
     const jwtToken = Cookie.get('jwt_token')
     const jobsUrl = `https://apis.ccbp.in/jobs?employment_type=${jobType}&minimum_package=${salaryRange}&search=${searchVal}`
     const options = {
@@ -140,9 +143,16 @@ class Jobs extends Component {
   getJobType = event => {
     const {jobType} = this.state
     const jobTypeItem = event.target.value
-    const updatedArray = [...jobType, jobTypeItem]
-    this.setState({jobType: updatedArray}, this.getAllJobsDetails)
-    // console.log(updatedArray)
+    const check = jobType.includes(jobTypeItem)
+    if (check === false) {
+      const updatedArray = [...jobType, jobTypeItem]
+      this.setState({jobType: updatedArray}, this.getAllJobsDetails)
+      //   console.log(updatedArray)
+    } else {
+      const filtered = jobType.filter(each => each !== jobTypeItem)
+      this.setState({jobType: filtered}, this.getAllJobsDetails)
+      //   console.log(jobType)
+    }
   }
 
   getSalaryRange = event => {
@@ -218,6 +228,20 @@ class Jobs extends Component {
     )
   }
 
+  renderNobJobsView = () => (
+    <div className="jobs-container-no-jobs">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/no-jobs-img.png"
+        alt="no jobs"
+        className="no-jobs-img"
+      />
+      <h1 className="no-jobs-text">No Jobs Found</h1>
+      <p className="no-jobs-des">
+        We could not find any jobs. Try other filters.
+      </p>
+    </div>
+  )
+
   jobsProcess = () => {
     const {jobsDataStatus} = this.state
     switch (jobsDataStatus) {
@@ -258,7 +282,7 @@ class Jobs extends Component {
   )
 
   renderLoaderForUser = () => (
-    <div className="loader-container-user">
+    <div className="loader-container-user" data-testid="loader">
       <Loader type="ThreeDots" color="#ffffff" height="40" width="40" />
     </div>
   )
@@ -298,10 +322,31 @@ class Jobs extends Component {
   }
 
   render() {
+    const {searchVal, jobsData, jobsDataStatus} = this.state
+    const jobsCount = jobsData.length
+    const jobs =
+      jobsCount === 0 && jobsDataStatus === loadingStages.success
+        ? this.renderNobJobsView()
+        : this.jobsProcess()
     return (
       <div>
         <Header />
         <div className="jobs-bg">
+          <div className="input-container-sm">
+            <input
+              type="search"
+              className="search-input"
+              placeholder="Search"
+              value={searchVal}
+              onChange={this.getUserInput}
+            />
+            <div className="search-icon-con" data-testid="searchButton">
+              <BsSearch
+                className="search-icon"
+                onClick={this.getAllJobsDetails}
+              />
+            </div>
+          </div>
           <div className="filters-con">
             {this.renderUserDetailsProcesses()}
             <hr className="separator" />
@@ -313,7 +358,7 @@ class Jobs extends Component {
             <h1 className="type-of-employment">Salary Range</h1>
             <ul className="check-boxes-con">{this.renderSalaryRanges()}</ul>
           </div>
-          {this.jobsProcess()}
+          {jobs}
         </div>
       </div>
     )
